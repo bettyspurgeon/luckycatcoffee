@@ -268,13 +268,57 @@ section#operation {
 div.operation-info {
     background: rgba(24, 27, 19, 0.8);
     padding: 3em;
+    height: 40em;
     text-align: center;
     /* center container */
-     position: absolute;
+    position: absolute;
     width: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+h2.hours-header {
+    font-size: 3em;
+    font-weight: 800;
+}
+div.operations-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+}
+h3.hours-header {
+    font-size: 2em;
+    font-weight: 400;
+}
+ul.hours-times {
+    padding: 1em;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+ul.location-info {
+    padding: 1em; 
+    font-size: 1.5em;
+}
+.city-centre-map {
+    height: 300px;
+}
+.map-btns {
+    padding-top: 3em;
+}
+.map-btn {
+    margin-top: 4em; 
+    background-color: #8E8978;
+    padding: 1em 1.5em;
+    border-radius: 3em;
+    border: 2px solid white;
+}
+.maps {
+    height: 30em;
+}
+.map-btn:hover {
+    cursor: pointer;
+    background-color: #181B13;
+    transition: 500ms;
 }
 /* contact page styling */
 section#contact {
