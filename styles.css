@@ -55,7 +55,10 @@ table {
 body {
     font-family: 'Poppins', sans-serif;
 } 
-
+section {
+    height: 100vh; 
+    padding-top: 2em;
+}
 /* NAV BAR STYLING */
 nav { 
     height: 3em;
@@ -204,6 +207,7 @@ p.menu-button:hover {
     background-color: #181B13;
     transition: 1000ms;
 }
+/* background images for menu selectors */
 div.drinks{
     background: url(./Images/papercups.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -227,4 +231,31 @@ div.pastries {
     -o-background-size: cover;
     object-fit: contain;
     height: 100vh;
+}
+
+/* biography section styling */
+section#biography {
+    background-color: #181B13;
+    color: white;
+}
+h2.bio-header {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 1em;
+}
+div.bio-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.bio-paragraphs {
+    width: 40%;
+    margin: 3em;
+}
+.bio-image {
+    width: 40%;
+    margin: 3em; 
+    border-radius: 2em;
 }
