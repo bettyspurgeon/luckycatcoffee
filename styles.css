@@ -57,7 +57,6 @@ body {
 } 
 section {
     height: 100vh; 
-    padding-top: 2em;
 }
 /* NAV BAR STYLING */
 nav { 
@@ -99,11 +98,12 @@ h2.header {
 }
 
 section#intro-page {
-    background: url(./Images/matchaphoto.jpeg);
-    background-size: cover;
+    background: url(./Images/matchaphoto.jpeg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    object-fit: contain;
     height: 100vh;
-    width: 100vw;
-    position: relative;
 }
 
 div.intro-content {
@@ -173,11 +173,10 @@ span.main-menu.button:hover {
 section#menu-select {
     display: flex;
     flex-direction: row;
-    height: 100vh;
-
 }
 div.menu-select-container {
     width: 33.33vw;
+    height: 100vh;
 }
 div.menu-select-child {
     width: 75%; 
@@ -242,7 +241,7 @@ h2.bio-header {
     font-size: 3em;
     font-weight: 800;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 div.bio-content {
     display: flex;
@@ -258,4 +257,100 @@ div.bio-content {
     width: 40%;
     margin: 3em; 
     border-radius: 2em;
+}
+/* hours of operation styling */
+section#operation {
+    background: linear-gradient(0deg, rgba(142, 137, 120, 0.3), rgba(142, 137, 120, 0.3)), url(./images/coffeemachine.jpg);
+    position: relative;
+    background-size: cover;
+    color: white;
+}
+div.operation-info {
+    background: rgba(24, 27, 19, 0.8);
+    padding: 3em;
+    text-align: center;
+    /* center container */
+     position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* contact page styling */
+section#contact {
+    background: linear-gradient(0deg, rgba(142, 137, 120, 0.3), rgba(142, 137, 120, 0.3)), url(./images/teabags.jpg);
+    position: relative;
+    background-size: cover;
+    color: white;
+}
+.contact-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%; 
+    background: rgba(24, 27, 19, 0.8);
+    padding: 3em;
+    text-align: center;
+    /* center container */
+     position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-header {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+label {
+    font-size: 1.25em; 
+}
+input {
+    width: 30em;
+    height: 2em;
+    background-color: #8E8978;
+    opacity: 0.7;
+    color:white;
+}
+textarea {
+    width: 30em;
+    background-color: #8E8978;
+    opacity: 0.7;
+    color: white;
+}
+span.submit-btn {
+    background-color: #8E8978; 
+    padding: 1em 1.75em; 
+    border-radius: 3em;
+    border: 2px solid white;
+}
+span.submit-btn:hover {
+    background-color: #181B13;
+    transition: 500ms;
+}
+
+/* footer styling */
+footer {
+    background-color: #181B13;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-container.operation-hours {
+    padding-left: 2em; 
+}
+
+.footer-logo {
+    margin-top: -5em; 
+}
+div.footer-container {
+    width: 33.3%;
+}
+h3.header-footer {
+    font-size: 1.5em;
+    font-weight: 800;
 }
