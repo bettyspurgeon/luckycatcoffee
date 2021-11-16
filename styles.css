@@ -154,7 +154,8 @@ span.main-menu.button {
     padding: 1em;
     font-size: 1.5em; 
     background-color: #8E8978;
-    border-radius: 3em; 
+    border-radius: 3em;
+    border: 2px solid white; 
     /* Center button */
     position: absolute;
     top: 85%;
@@ -162,22 +163,65 @@ span.main-menu.button {
     transform: translate(-50%, -50%);
 }
 span.main-menu.button:hover {
-     background-color: #181B13;
+    background-color: #181B13;
     transition: 1000ms;
-    border: 2px solid white;
 }
-
+/* Menu selection section */
 section#menu-select {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 
 }
 div.menu-select-container {
-    width: 33vw;
+    width: 33.33vw;
 }
-
+div.menu-select-child {
+    width: 75%; 
+    height: 30%; 
+    background: rgba(24, 27, 19, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    /* center black box */
+    margin-top: 50%;
+    margin-left: 12%;
+}
+h2.menu-header {
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+}
+p.menu-button {
+    margin-top: 1em;
+    background-color: #8E8978;
+    padding:1em 1.5em;
+    border-radius: 3em;
+    border: 2px solid white;
+}
+p.menu-button:hover {
+    background-color: #181B13;
+    transition: 1000ms;
+}
 div.drinks{
     background: url(./Images/papercups.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    object-fit: contain;
+    height: 100vh;
+}
+div.story {
+    background: url(./Images/FoodtruckImage.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    object-fit:contain;
+    height: 100vh;
+}
+div.pastries {
+    background: url(./Images/pastry.jpg)no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
