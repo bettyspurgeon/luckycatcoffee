@@ -502,6 +502,21 @@ footer {
 li.social-icon {
   display: inline-block;
 }
+
+
+/* Menu Page Styling */
+.select-container {
+  display: flex;
+  flex-direction: row;
+}
+div.drink-menu-image {
+  background: url(./images/coffeepour.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+}
+
 @media (max-width: 480px) {
   h2.header {
     display: none;
