@@ -135,6 +135,7 @@ table {
 /* Universal Font */
 body {
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 section {
   height: 100vh;
@@ -264,10 +265,10 @@ div.menu-select-child {
   align-items: center;
   justify-content: center;
   /* center black box */
-  margin-top: 50%;
+  margin-top: 45%;
   margin-left: 12%;
 }
-h2.menu-header {
+.menu-header {
   color: white;
   font-size: 2em;
   font-weight: 800;
@@ -505,16 +506,34 @@ li.social-icon {
 
 
 /* Menu Page Styling */
-.select-container {
+.menus-container {
   display: flex;
   flex-direction: row;
 }
-div.drink-menu-image {
-  background: url(./images/coffeepour.jpg);
+.menus-child {
+  width: 50vw; 
+}
+
+.menus-child.coffees {
+  background: linear-gradient(0deg, rgba(142, 137, 120, 0.3), rgba(142, 137, 120, 0.3)), url(./Images/coffeepour.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   object-fit: cover;
+  height: 100vh;
+}
+.menus-child.foods {
+  background: url(./Images/donut.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+}
+h3.see-menu {
+  background: rgba(24, 27, 19, 0.8);
+  mix-blend-mode: soft-light;
+  
 }
 
 @media (max-width: 480px) {
