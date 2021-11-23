@@ -481,9 +481,42 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+/* footer hours styling */
+.operation-hours {
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+/* footer logo */
+.footer-logo {
+  /* margin-top: -5em;
+  margin-left: -13em; */
+}
+/* footer socials container styling */
+.footer-container.socials {
+  padding-right: 2em; 
+  
+}
+li.social-icon {
+  display: inline-block;
 }
 @media (max-width: 480px) {
   h2.header {
-    visibility: hidden;
+    display: none;
+  }
+  .navbar {
+    display: none;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  img.city-centre-map {
+    display: none;
+  }
+  .map-btns {
+    display: none;
   }
 }
