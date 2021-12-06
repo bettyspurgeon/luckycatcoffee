@@ -405,8 +405,19 @@ ul.location-info {
   border-radius: 3em;
   border: 2px solid white;
 }
+#maps {
+  height: 20em;
+  background: url(./images/downtown-map.png);
+}
 .maps {
   height: 30em;
+}
+.map-btn {
+  background-color: #8e8978;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 3em;
+  border: 2px solid white;
 }
 .map-btn:hover {
   cursor: pointer;
