@@ -139,6 +139,7 @@ body {
 }
 section {
   height: 100vh;
+
 }
 /* NAV BAR STYLING */
 nav {
@@ -407,7 +408,13 @@ ul.location-info {
 }
 #maps {
   height: 20em;
-  background: url(./images/downtown-map.png);
+}
+.city-map {
+  background: url(./images/downtown-map.png)
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  object-fit: cover;
 }
 .maps {
   height: 30em;
